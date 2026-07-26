@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --color-royal: #1A48BB;
+  --color-royal-dark: #133890;
+  --color-royal-light: #2558D4;
+  --color-ivory: #F7F2E6;
+  --color-ivory-dark: #EDE5CC;
+  --color-sky: #B0CCEF;
+  --color-sky-dark: #7AABDF;
+  --color-charcoal: #121212;
+  --color-charcoal-soft: #1E1E1E;
+  --color-warm-gray: #8B8470;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #1A48BB; border-radius: 3px; }
+
+/* Selection */
+::selection { background: #1A48BB; color: white; }
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(26, 72, 187, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(176, 204, 239, 0.25);
+}
